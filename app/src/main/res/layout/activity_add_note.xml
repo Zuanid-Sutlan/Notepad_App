@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddNoteActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/edt_bg"
+            android:backgroundTint="@android:color/transparent"
+            android:ems="10"
+            android:hint="Title"
+            android:inputType="text|textCapSentences"
+            android:padding="10dp"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="62dp"
+            tools:layout_editor_absoluteY="44dp" />
+    </HorizontalScrollView>
+
+    <View
+        android:id="@+id/view"
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_height="1dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/etDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edt_bg"
+            android:backgroundTint="@android:color/transparent"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:textSize="20sp" />
+    </ScrollView>
+
+</LinearLayout>
